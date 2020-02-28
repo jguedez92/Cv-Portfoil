@@ -1,0 +1,34 @@
+.navbar-nav, .navbar-brand, .brand-span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar-nav{
+    font-size: 1.2em;
+}
+
+.navbar-brand{
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+.navbar-brand:hover{
+    text-shadow: -.1em .1em .2em #080808;
+    }
+
+.nav-item{
+    margin-left: 1.7em;
+}
+
+.nav .nav-item a:hover{
+color: #E7C747 !important;
+text-shadow: -.1em .1em .2em #080808;
+}
+
+.brand-span{
+    color: #E7C747;
+    font-size: .5em;
+}
+
+.row-01{
+    margin-top: .5em;
+}
