@@ -39,3 +39,7 @@ text-shadow: -.1em .1em .2em #080808;
 .row-01{
     margin-top: .5em;
 }
+
+.carousel-inner{
+    border-radius: 15px;
+}
