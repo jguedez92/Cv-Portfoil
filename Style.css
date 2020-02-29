@@ -3,10 +3,9 @@
 }
 
 .nav{
-    border: solid 7px #ffffff;
-    border-top: unset;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom: solid 7px #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .navbar-nav{
@@ -37,9 +36,22 @@ text-shadow: -.1em .1em .2em #080808;
 }
 
 .row-01{
+
     margin-top: .5em;
 }
 
 .carousel-inner{
-    border-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.featurette-divider{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+.carousel-caption {
+    padding: 1em;
+    border-radius: 10px;
+    background-color: rgba(27, 27, 26, 0.596) !important;
 }
