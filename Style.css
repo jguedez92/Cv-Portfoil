@@ -55,3 +55,27 @@ text-shadow: -.1em .1em .2em #080808;
     border-radius: 10px;
     background-color: rgba(27, 27, 26, 0.596) !important;
 }
+
+.titulo-perfil h2{
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.titulo-tecnologias{
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+}
+
+.seccion-tecnologia img{
+    border-radius: 150px;
+}
+
+.seccion-tecnologia h2{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.seccion-tecnologia  button{
+    margin-top: 1em;
+    margin-left: 3em;
+}
