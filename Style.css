@@ -66,7 +66,7 @@ text-shadow: -.1em .1em .2em #080808;
     border-radius: 250px;
 }
 
-.titulo-tecnologias{
+.titulo-tecnologias, .titulo-Estudios{
     margin-top: 1em;
     margin-bottom: 2.5em;
 }
