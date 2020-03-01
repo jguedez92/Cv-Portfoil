@@ -67,6 +67,9 @@ text-shadow: -.1em .1em .2em #080808;
 }
 
 .seccion-perfil-foto img{
+    width: 23em;
+    height: 23em;
+    margin-top: 3.5em;
     border: solid 5px #08080836;
     border-radius: 250px;
 }
