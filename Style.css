@@ -61,12 +61,18 @@ text-shadow: -.1em .1em .2em #080808;
     margin-bottom: 1em;
 }
 
+.seccion-perfil-foto img{
+    border: solid 5px #08080836;
+    border-radius: 250px;
+}
+
 .titulo-tecnologias{
     margin-top: 1em;
     margin-bottom: 2.5em;
 }
 
 .seccion-tecnologia img{
+    border: solid 5px #08080836;
     border-radius: 150px;
 }
 
