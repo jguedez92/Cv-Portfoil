@@ -1,12 +1,16 @@
+body{
+    background: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg");
+    background-attachment: fixed;
+}
 .navbar-nav, .navbar-brand, .brand-span{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.nav{
-    border-bottom: solid 7px #ffffff;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.container-main{
+    background-color: rgba(173, 173, 173, 0.431);
+    padding-bottom: 1em;
 }
+
 
 .navbar-nav{
     font-size: 1.2em;
@@ -71,6 +75,12 @@ text-shadow: -.1em .1em .2em #080808;
     margin-bottom: 2.5em;
 }
 
+.container-tecnologias, .{
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 1em;
+}
+
 .seccion-tecnologia img{
     border: solid 5px #08080836;
     border-radius: 150px;
@@ -84,4 +94,8 @@ text-shadow: -.1em .1em .2em #080808;
 .seccion-tecnologia  button{
     margin-top: 1em;
     margin-left: 3em;
+}
+
+.no-gutters{
+    background-color: #ffffff;
 }
