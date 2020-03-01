@@ -6,7 +6,7 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.container-main{
+.main{
     background-color: rgba(173, 173, 173, 0.431);
     padding-bottom: 1em;
 }
@@ -75,12 +75,6 @@ text-shadow: -.1em .1em .2em #080808;
     margin-bottom: 2.5em;
 }
 
-.container-tecnologias, .{
-    border-radius: 15px;
-    background-color: #fff;
-    padding: 1em;
-}
-
 .seccion-tecnologia img{
     border: solid 5px #08080836;
     border-radius: 150px;
@@ -98,4 +92,8 @@ text-shadow: -.1em .1em .2em #080808;
 
 .no-gutters{
     background-color: #ffffff;
+}
+
+#cont-exp{
+    display: none;
 }

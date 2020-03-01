@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="Style.css">
+    <script src="script.js" type="text/JavaScript" async></script>
 
 
     <title>Portfoil Page | John guedez</title>
 </head>
 
 <body>
-    <!--                            SECCION ESTATICO                                  -->
+    <!--                  SECCION ESTATICO                                  -->
     <header>
         <nav class="nav  navbar navbar-dark  bg-dark">
             <a class="navbar-brand" href="#">John Guedez <span class="brand-span">Fullstack Web Developer</span></a>
@@ -25,10 +26,11 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Perfil Profesional<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" id="nav-perf" href="#">Perfil Profesional<span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experiencias</a>
+                        <a class="nav-link" id="nav-exp" href="#">Experiencias</a>
                     </li>
             </div>
         </nav>
@@ -43,38 +45,34 @@
         <div class="carousel-inner">
             <div class="carousel-item">
                 <img src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=9400"
-                    width="1400" height="500" class="d-block " alt="...">
+                    width="1400" height="400" class="d-block " alt="...">
                 <div class="container ">
                     <div class="carousel-caption text-left">
                         <h1>Profesional de Informatica.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                        </p>
-                        <p><a class="btn btn-lg btn-warning" href="#" role="button">Leer más...</a></p>
+                        
+                        <p><a class="btn btn-lg btn-warning" id="btn1" href="#" role="button">Leer más...</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                    width="1400" height="500" class="d-block " alt="...">
+                    width="1400" height="400" class="d-block " alt="...">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Amplios estudios y certificaciones.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-warning" href="#" role="button">Leer más...</a></p>
+                        
+                        <p><a class="btn btn-lg btn-warning" id="btn2" href="#" role="button">Leer más...</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item active">
                 <img src="https://images.pexels.com/photos/330771/pexels-photo-330771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                    width="1400" width="1400" height="500" class="d-block " alt="...">
+                    width="1400" width="1400" height="400" class="d-block " alt="...">
                 <div class="container">
                     <div class="carousel-caption text-right">
                         <h1>Gran manejo de las tecnologias de desarrollo actuales del mercado.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-warning" href="#seccion-tecnologia" role="button">Leer
+                        
+                        <p><a class="btn btn-lg btn-warning" id="btn3" href="#" role="button">Leer
                                 más...</a></p>
                     </div>
                 </div>
@@ -89,10 +87,11 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="container container-main">
-        <!--                         SECCION DINAMICO                        -->
+    <!--                         SECCION DINAMICO                        -->
 
-        <div class="container dinamic">
+    <div class="container main">
+        <!-- ------------------------------------ Perfil ----------------------------- -->
+        <div class="container" id="cont-perf">
             <hr class="featurette-divider">
             <div class="row featurette">
                 <div class="col-md-7">
@@ -119,263 +118,261 @@
             </div>
             <hr class="featurette-divider">
 
-            <!--              Seccion de tecnologias               -->
-            <div class="container marketing">
-                <div class="row" id="seccion-tecnologia">
-                    <div class="col-lg-12 titulo-tecnologias">
-                        <h2 class="featurette-heading">Tecnologias para Desarrollo</h2>
-                    </div>
+            <!--    Seccion de tecnologias      -->
+
+            <div class="row" id="seccion-tecnologia">
+                <div class="col-lg-12 titulo-tecnologias">
+                    <h2 class="featurette-heading">Tecnologias para Desarrollo</h2>
                 </div>
-
-                <!-- /.col-lg-4 -->
-                <div class="container container-tecnologias">
-                    <div class="row">
-
-                        <div class="col-lg-4 seccion-tecnologia">
-                            <img src="img/FRONT-LOGO.png" width="250" height="250" alt="">
-                            <h2>Front-End</h2>
-
-                            <p><button type="button" class="btn btn-warning" data-toggle="modal"
-                                    data-target="#Front-Modal">
-                                    Mostrar Tecnologias
-                                </button></p>
-                            <!-- Modal -->
-                            <div class="modal fade" id="Front-Modal" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Front-End</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            ...
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-warning">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- /.col-lg-4 -->
-                        <div class="col-lg-4 seccion-tecnologia">
-                            <img src="/img/BACK-LOGO.png" wwidth="250" height="250" alt="...">
-                            <h2>Back-End</h2>
-                            <p><button type="button" class="btn btn-warning" data-toggle="modal"
-                                    data-target="#Back-Modal">
-                                    Mostrar Tecnologias
-                                </button></p>
-                            <!-- Modal -->
-                            <div class="modal fade" id="Back-Modal" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Back-End</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            ...
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-warning">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- /.col-lg-4 -->
-                        <div class="col-lg-4 seccion-tecnologia">
-                            <img src="img/BD-LOGO.png" width="250" height="250" alt="...">
-                            <h2>Data Base</h2>
-                            <p><button type="button" class="btn btn-warning" data-toggle="modal"
-                                    data-target="#Front-Modal">
-                                    Mostrar Tecnologias
-                                </button></p>
-                            <!-- Modal -->
-                            <div class="modal fade" id="Front-Modal" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            ...
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-warning">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.col-lg-4 -->
-                    </div>
-                </div>
-                <!-- /.row -->
-                <hr class="featurette-divider">
             </div>
-            <div class="container">
-                <!--               SECCION DE ESTUDIOS          -->
-                <div class="row" id="seccion-tecnologia">
-                    <div class="col-lg-12 titulo-Estudios">
-                        <h2 class="featurette-heading">Estudios Realizados</h2>
-                    </div>
-                </div>
-                <div class="row mb-2 row-01">
-                    <div class="col-md-4">
-                        <div
-                            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <strong class="d-inline-block mb-2 text-success">Master</strong>
-                                <div class="row">
-                                    <div class="col p-2 d-flex flex-column position-static">
-                                        <img src="https://geekshubs.com/wp-content/uploads/2019/02/logo-300ppp.png"
-                                            width="250" height="70" alt="">
-                                    </div>
-                                </div>
-                                <h3 class="mb-0">GeeksHubs Academy.</h3>
-                                <div class="mb-1 text-muted">(Actual - Madrid, España)</div>
-                                <p class="mb-auto">
-                                    Desarrollador Web Full Stack
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div
-                            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <strong class="d-inline-block mb-2 text-success">Universitario</strong>
-                                <div class="row">
-                                    <div class="col p-2 d-flex flex-column position-static">
-                                        <img src="data:image/png;base64,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"
-                                            width="160" height="80" alt="">
-                                    </div>
-                                </div>
-                                <h3 class="mb-0">Instituto Universitario ISUM</h3>
-                                <div class="mb-1 text-muted">
-                                    ( Mayo 2019 - Caracas, Venezuela).
-                                </div>
-                                <p class="mb-auto">
-                                    Educación Superior Universitaria en Informática.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div
-                            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <strong class="d-inline-block mb-2 text-success">Curso</strong>
-                                <div class="row">
-                                    <div class="col p-2 d-flex flex-column position-static">
-                                        <img src="https://www.keysca.com/wp-content/uploads/2018/03/02-LOGO-KEYS-ALTA-RESOLUCION.png"
-                                            width="220px" height="80px" alt="">
-                                    </div>
-                                </div>
-                                <h3 class="mb-0">
-                                    Instituto Keys
-                                </h3>
-                                <div class="mb-1 text-muted">
-                                    (Diciembre 2018 - Caracas, Venezuela)
-                                </div>
-                                <p class="mb-auto">
-                                    Técnico Instalador de Sistemas de redes.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="featurette-divider">
-                <div class="row" id="seccion-tecnologia">
-                    <div class="col-lg-12 titulo-Estudios">
-                        <h2 class="featurette-heading">Experiencias Laborales</h2>
-                    </div>
-                </div>
-                <div class="row featurette">
-                    <div class="col-md-10">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-light btn-lg" type="button" data-toggle="collapse"
-                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            GeeksHubs Academy
+
+            <!-- /.col-lg-4 -->
+            <div class="container container-tecnologias">
+                <div class="row">
+
+                    <div class="col-lg-4 seccion-tecnologia">
+                        <img src="img/FRONT-LOGO.png" width="250" height="250" alt="">
+                        <h2>Front-End</h2>
+
+                        <p><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Front-Modal">
+                                Mostrar Tecnologias
+                            </button></p>
+                        <!-- Modal -->
+                        <div class="modal fade" id="Front-Modal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Front-End</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
                                         </button>
-                                    </h2>
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <h2 class="featurette-heading">Programador web Full Stack. <span
-                                                class="text-muted">feb - jun 2020
-                                            </span></h2>
-                                        <div class="col-md-11 text-justify">
-                                            Participacion de Bootcamp en donde se realizan la creacion de proyectos
-                                            orientados a la programacion web, desarrollo de front-end, back-end y
-                                            elaboracion de bases de datos para los sistemas.
-                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-light btn-lg collapsed" type="button"
-                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            Televisora Venezolana Social Tves
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <h2 class="featurette-heading">
-                                            Tecnico de Soporte y Redes.<span class="text-muted"> feb 2018 - sep
-                                                201</span>
-                                        </h2>
-                                        <div class="col-md-11 text-justify">
-                                            Instalación y mantenimiento de sistemas operativos, hardware y software.
-                                            Atención y
-                                            resolución de problemas de sistemas informáticos y ordenadores,
-                                            mantenimiento de plataforma e infraestructura de redes,
-                                            instalacion de sistemas de cableado de red y telefonia.
-                                        </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-warning">Save changes</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-                <hr class="featurette-divider">
-                <footer class="container">
-                    <p class="float-right"><a href="#">Back to top</a></p>
-                    <p>© 2017-2019 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-                </footer>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4 seccion-tecnologia">
+                        <img src="/img/BACK-LOGO.png" wwidth="250" height="250" alt="...">
+                        <h2>Back-End</h2>
+                        <p><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Back-Modal">
+                                Mostrar Tecnologias
+                            </button></p>
+                        <!-- Modal -->
+                        <div class="modal fade" id="Back-Modal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Back-End</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-warning">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4 seccion-tecnologia">
+                        <img src="img/BD-LOGO.png" width="250" height="250" alt="...">
+                        <h2>Data Base</h2>
+                        <p><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Front-Modal">
+                                Mostrar Tecnologias
+                            </button></p>
+                        <!-- Modal -->
+                        <div class="modal fade" id="Front-Modal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-warning">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                </div>
             </div>
+            <!-- /.row -->
         </div>
+
+        <!-- ------------------------ EXPERIENCIAS -------------------------- -->
+        <div class="container" id="cont-exp">
+            <!--               SECCION DE ESTUDIOS          -->
+            <div class="row" id="seccion-tecnologia">
+                <div class="col-lg-12 titulo-Estudios">
+                    <h2 class="featurette-heading">Estudios Realizados</h2>
+                </div>
+            </div>
+            <div class="row mb-2 row-01">
+                <div class="col-md-4">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Master</strong>
+                            <div class="row">
+                                <div class="col p-2 d-flex flex-column position-static">
+                                    <img src="https://geekshubs.com/wp-content/uploads/2019/02/logo-300ppp.png"
+                                        width="250" height="70" alt="">
+                                </div>
+                            </div>
+                            <h3 class="mb-0">GeeksHubs Academy.</h3>
+                            <div class="mb-1 text-muted">(Actual - Madrid, España)</div>
+                            <p class="mb-auto">
+                                Desarrollador Web Full Stack
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Universitario</strong>
+                            <div class="row">
+                                <div class="col p-2 d-flex flex-column position-static">
+                                    <img src="data:image/png;base64,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"
+                                        width="160" height="80" alt="">
+                                </div>
+                            </div>
+                            <h3 class="mb-0">Instituto Universitario ISUM</h3>
+                            <div class="mb-1 text-muted">
+                                ( Mayo 2019 - Caracas, Venezuela).
+                            </div>
+                            <p class="mb-auto">
+                                Educación Superior Universitaria en Informática.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Curso</strong>
+                            <div class="row">
+                                <div class="col p-2 d-flex flex-column position-static">
+                                    <img src="https://www.keysca.com/wp-content/uploads/2018/03/02-LOGO-KEYS-ALTA-RESOLUCION.png"
+                                        width="220px" height="80px" alt="">
+                                </div>
+                            </div>
+                            <h3 class="mb-0">
+                                Instituto Keys
+                            </h3>
+                            <div class="mb-1 text-muted">
+                                (Diciembre 2018 - Caracas, Venezuela)
+                            </div>
+                            <p class="mb-auto">
+                                Técnico Instalador de Sistemas de redes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row" id="seccion-tecnologia">
+                <div class="col-lg-12 titulo-Estudios">
+                    <h2 class="featurette-heading">Experiencias Laborales</h2>
+                </div>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-10">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-light btn-lg" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        GeeksHubs Academy
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h2 class="featurette-heading">Programador web Full Stack. <span
+                                            class="text-muted">feb - jun 2020
+                                        </span></h2>
+                                    <div class="col-md-11 text-justify">
+                                        Participacion de Bootcamp en donde se realizan la creacion de proyectos
+                                        orientados a la programacion web, desarrollo de front-end, back-end y
+                                        elaboracion de bases de datos para los sistemas.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-light btn-lg collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Televisora Venezolana Social Tves
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h2 class="featurette-heading">
+                                        Tecnico de Soporte y Redes.<span class="text-muted"> feb 2018 - sep
+                                            201</span>
+                                    </h2>
+                                    <div class="col-md-11 text-justify">
+                                        Instalación y mantenimiento de sistemas operativos, hardware y software.
+                                        Atención y
+                                        resolución de problemas de sistemas informáticos y ordenadores,
+                                        mantenimiento de plataforma e infraestructura de redes,
+                                        instalacion de sistemas de cableado de red y telefonia.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+        <footer class="container">
+            <p class="float-right"><a href="#">Volver Arriba</a></p>
+            <p>© 2020 JotaGe · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+
     </div>
 
     <!-- IMPORTANDO LIBRERIAS DE JQUERY Y JS -->
