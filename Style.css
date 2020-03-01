@@ -102,6 +102,9 @@ text-shadow: -.1em .1em .2em #080808;
     display: none;
 }
 
+.modal-body, .modal-body .col-md-6{
+    text-align: center;
+}
 
 
 .modal-body img{
