@@ -22,6 +22,10 @@ body{
     cursor: default;
 }
 
+.navbar-brand img{
+    border-radius: 5px;
+}
+
 .navbar-brand:hover{
     text-shadow: -.1em .1em .2em #080808;
     }
