@@ -36,7 +36,7 @@ text-shadow: -.1em .1em .2em #080808;
 }
 
 .brand-span{
-    color: #E7C747;
+    color: #E7C747 !important;
     font-size: .5em;
 }
 
