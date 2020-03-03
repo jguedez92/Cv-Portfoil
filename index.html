@@ -11,7 +11,7 @@
 
 
     <title>Portfoil Page | John guedez</title>
-    <link rel="shortcut icon" type="image/png" href="img/fabicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/fabicon.png" />
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <nav class="nav  navbar navbar-dark  bg-dark">
             <a class="navbar-brand" href="#">
                 <img src="img/fabicon.png" width="32" height="32" alt="">
-                John Guedez 
+                John Guedez
                 <span class="text-muted brand-span">Web Developer</span>
             </a>
 
@@ -36,6 +36,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="nav-exp" href="#">Experiencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-contact" href="#">Contacto</a>
                     </li>
             </div>
         </nav>
@@ -55,7 +58,8 @@
                     <div class="carousel-caption text-left">
                         <h1>Profesional de Informatica.</h1>
                         <p>
-                           Gran experiencia en el area de la informática, permitiendo desarrollar una alta capacidad de análisis y resolución de problemas.
+                            Gran experiencia en el area de la informática, permitiendo desarrollar una alta capacidad de
+                            análisis y resolución de problemas.
                         </p>
                         <p><a class="btn btn-lg btn-warning" id="btn1" href="#" role="button">Leer más...</a></p>
                     </div>
@@ -68,7 +72,8 @@
                     <div class="carousel-caption">
                         <h1>Amplios estudios y certificaciones.</h1>
                         <p>
-                           Titulaciones a nivel universitario asi como adiestramiento en el area de desarrollo de aplicaciones web para el campo laboral. 
+                            Titulaciones a nivel universitario asi como adiestramiento en el area de desarrollo de
+                            aplicaciones web para el campo laboral.
                         </p>
 
                         <p><a class="btn btn-lg btn-warning" id="btn2" href="#" role="button">Leer más...</a></p>
@@ -82,7 +87,8 @@
                     <div class="carousel-caption text-right">
                         <h1>Certificado de Bootcamp.</h1>
                         <p>
-                            Adiestrado para desarrollar sistemas web ya sea front-end o back con multiples tecnologia que estan a la vanguardia en el desarrollo web.
+                            Adiestrado para desarrollar sistemas web ya sea front-end o back con multiples tecnologia
+                            que estan a la vanguardia en el desarrollo web.
                         </p>
                         <p><a class="btn btn-lg btn-warning" id="btn3" href="#" role="button">Leer
                                 más...</a></p>
@@ -102,7 +108,7 @@
     <!--                         SECCION DINAMICO                        -->
 
     <div class="container main">
-        <!-- ------------------------------------ SECCION 01 ----------------------------- -->
+        <!-- --------------------- PERFIL ----------------------------- -->
         <div class="container" id="cont-perf">
             <hr class="featurette-divider">
             <div class="row featurette">
@@ -292,11 +298,10 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div><!-- /END ROW -->
             </div><!-- /END CONTAINER-TECNOLOGIAS -->
-        </div><!-- /END CONTAINER - PERFIL  -->
-
+        </div>
         <!-- ------------------------ EXPERIENCIAS -------------------------- -->
         <div class="container" id="cont-exp">
             <!--               SECCION DE ESTUDIOS          -->
@@ -435,7 +440,46 @@
             </div>
 
         </div>
-
+        <!-- --------------------------CONTACTO--------------------------------- -->
+        <div class="container" id="container-form">
+            <div class="row" id="seccion-form">
+                <div class="col-lg-12">
+                    <h2 class="featurette-heading">Contacto</h2>
+                    <p class="lead text-justify">
+                        Completa el siguiente formulario y me pondre en contacto con usted lo antes posible.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-sm-12 col-md-6 border-form">
+                        <form >
+                            <div class="form-group">
+                                <label for="v-nombre">Nombre y Apellido</label>
+                                <input class="form-control" id="v-nombre" type="text" placeholder="Ej- Pedro Perez">
+                            </div>
+                            <div class="form-group">
+                                <label for="v-contacto">Numero de Contacto</label>
+                                <input class="form-control" id="v-contacto" type="text" placeholder="Ej- 699 000 111" >
+                            </div>
+                            <div class="form-group">
+                                <label for="v-email">Email address</label>
+                                <input type="email" class="form-control" id="v-email" placeholder="ejempo@mail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="v-mensaje">Mensaje</label>
+                                <textarea class="form-control" id="v-mensaje" rows="3"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-formulario">Submit</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <hr class="featurette-divider">
         <footer class="container">
             <p class="float-right"><a href="#">Volver Arriba</a></p>
