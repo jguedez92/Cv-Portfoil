@@ -99,7 +99,16 @@ document.querySelector('.btn-formulario').addEventListener('click', () =>{
     const mensaje = document.querySelector("#v-mensaje").value
 
     if (!comprobarForm(nombre, tlf, email, mensaje)){
-        alert ("formulario enviado")
+        const msjes = localStorage.getItem('msjes')? JSON.parse(localStorage.getItem('msjes')):[]
+        
+        msjes.push({ nombre: nombre, telefono: tlf, email: email, mensaje: mensaje})
+        
+        localStorage.setItem('msjes', JSON.stringify(msjes))
+        
+
+        alert('Mensaje Enviado Satisfactoriamente')
+
+        location("index.html")
     } else{
         alert ("Ha ocurrido un error")
     }
