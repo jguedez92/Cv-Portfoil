@@ -5,13 +5,30 @@ let btnContacto = document.querySelector(".btn-formulario")
 
 const comprobarForm = (nombre, tlf , email, msj) =>{
     
-    let error = 'true';
-    if(nombre.lenght > 0){
-        error ='false'
+    let error = true;
+    if(nombre.length > 0){
+        if(tlf.length > 0){
+            if(email.length > 0){
+                if(msj.length > 0){
+                    error = false
+                }else{
+                    alert('Debe Ingresar un mensaje')
+                    console.log("ERROR- EL CAMPO DEL MENSAJE NO PUEDE ESTAR VACIO")
+                }
+            }else{
+                alert('Debe Ingresar un email')
+                console.log("ERROR- EL CAMPO DEL EMAIL NO PUEDE ESTAR VACIO") 
+            }
+        }else{
+            alert('Debe Ingresar un Telefono')
+            console.log("ERROR- EL CAMPO DEL TELEFONO NO PUEDE ESTAR VACIO")
+        }
     }else{
         alert('Debe Ingresar un nombre')
+        console.log("ERROR- EL CAMPO DEL NOMBRE NO PUEDE ESTAR VACIO")
     }
 
+    return error;
 }
 
 
@@ -75,3 +92,16 @@ document.querySelector("#btn3").addEventListener('click', () => {
     })
 });
 
+document.querySelector('.btn-formulario').addEventListener('click', () =>{
+    const nombre = document.querySelector('#v-nombre').value
+    const tlf = document.querySelector("#v-contacto").value
+    const email = document.querySelector("#v-email").value
+    const mensaje = document.querySelector("#v-mensaje").value
+
+    if (!comprobarForm(nombre, tlf, email, mensaje)){
+        alert ("formulario enviado")
+    } else{
+        alert ("Ha ocurrido un error")
+    }
+    
+})
